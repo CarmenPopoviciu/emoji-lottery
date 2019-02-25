@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "emoji-raffle": {
+    "emoji-lottery": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/emoji-raffle",
+            "outputPath": "dist/emoji-lottery",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "emoji-raffle:build"
+            "browserTarget": "emoji-lottery:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "emoji-raffle:build:production"
+              "browserTarget": "emoji-lottery:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "emoji-raffle:build"
+            "browserTarget": "emoji-lottery:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
         }
       }
     },
-    "emoji-raffle-e2e": {
+    "emoji-lottery-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "emoji-raffle:serve"
+            "devServerTarget": "emoji-lottery:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "emoji-raffle:serve:production"
+              "devServerTarget": "emoji-lottery:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "emoji-raffle"
+  "defaultProject": "emoji-lottery"
 }

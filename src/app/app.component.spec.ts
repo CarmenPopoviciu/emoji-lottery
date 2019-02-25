@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'emoji-raffle'`, () => {
+  it(`should have as title 'emoji-lottery'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('emoji-raffle');
+    expect(app.title).toEqual('emoji-lottery');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to emoji-raffle!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to emoji-lottery!');
   });
 });
